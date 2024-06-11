@@ -1,0 +1,112 @@
+﻿@import url(general.css);
+
+.header-img {
+    width: 75vw;
+    margin: 30px auto;
+    height: 75vh;
+}
+
+    .header-img img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+
+.content-blog {
+    width: 50vw;
+    margin: 50px auto;
+}
+
+    .content-blog h2 {
+        color: var(--primary-color);
+        text-transform: uppercase;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    .content-blog .description {
+        font-size: 16px;
+        color: var(--color-product-name);
+        margin-bottom: 15px;
+    }
+
+.part {
+    margin: 15px 0;
+}
+
+.title-part {
+    color: var(--title-part-color);
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.description-part {
+    font-size: 16px;
+    color: var(--color-product-name);
+    margin-bottom: 20px;
+}
+
+.part img {
+    width: 50vw;
+    height: 50vh;
+    object-fit: cover;
+    margin: 20px 0;
+    border-radius: 20px;
+}
+
+.footer-blog {
+    margin: 20px 0;
+}
+
+    .footer-blog h2 {
+        color: var(--primary-color);
+        font-size: 25px;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+
+.end-footer {
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.previous-blog a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.previous-blog i {
+    font-size: 16px;
+    margin-right: 10px;
+    color: var( --decription-color);
+}
+
+/* !Thiếu css nếu nội dung dài hơn khung , nó sẽ làm bể layout */
+
+.name-blog {
+    font-size: 17px;
+    color: var(--color-product-name);
+    font-weight: 300;
+}
+
+.next-blog a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.next-blog i {
+    font-size: 16px;
+    margin-left: 10px;
+    color: var( --decription-color);
+}

@@ -1,0 +1,64 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Account.master.cs" Inherits="DoAnNhom.Account1" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link rel="stylesheet" href="css/account.css">
+    <link rel="stylesheet" href="css/information.css"> 
+    <link rel="stylesheet" href="css/order.css">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+<div class="container">
+  <div class="sidebar-left">
+    <div class="account">
+      <div class="container-avatar">
+        <!-- !Render ra trang information user -->
+        <a href="">
+           <!-- !Render avatar -->
+           <img src="img/sanpham.jpg" alt="">
+        </a>
+      </div>
+      <div class="information-account">
+        <!-- !Render ra tên user -->
+<asp:Repeater ID="Repeater1" runat="server">
+    <ItemTemplate>
+        <p><%# Eval("USERNAME") %></p>
+    </ItemTemplate>
+</asp:Repeater>
+        <div class="modifier">
+          <!-- !Render ra trang information user -->
+          <a href="">
+            <i class="fa-solid fa-pen"></i>
+            <p>Sửa hồ sơ</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <ul class="menu-sidebar">
+      <li class="item-bar">
+        <a href="InformationUser.aspx">
+          <i class="fa-regular fa-user"></i>
+          <p>Tài khoản của tôi</p>
+          <ul class="sub-menu">
+            <li class="item-submenu"><a href="#">Hồ Sơ</a></li>
+            <li class="item-submenu"><a href="#">Ngân Hàng</a></li>
+            <li class="item-submenu"><a href="#">Địa chỉ</a></li>
+            <li class="item-submenu"><a href="#">Đổi mật khẩu</a></li>
+          </ul>
+      </a></li>
+      <li class="item-bar">
+        <a href="Order.aspx" class="active">
+          <i class="fa-solid fa-file-invoice"></i>
+          <p>Đơn mua</p>
+        </a>
+      </li>
+      <li class="item-bar">
+        <a href="#">
+          <i class="fa-solid fa-bell"></i>
+          <p>Thông báo</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+</div>
+ <script src="js/account.js"></script>
+</asp:Content>

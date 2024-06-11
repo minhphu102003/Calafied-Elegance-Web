@@ -1,0 +1,15 @@
+﻿:root {
+    --primary-color: #1D7E69;
+    --second-color: #D0F4EA;
+    --decription-color: #9CABA7;
+    --color-hover: #36A88F;
+    --color-product-name: #363535;
+    --title-part-color: #585353;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}

@@ -1,0 +1,128 @@
+﻿@import url(general.css);
+
+.container-login {
+    height: 90vh;
+    width: 90vw;
+    margin: 30px auto;
+    display: flex;
+}
+
+.form-login {
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 20px 70px 20px 30px;
+    width: 30vw;
+}
+
+    .form-login h6 {
+        font-size: 20px;
+        font-weight: 100;
+        margin-bottom: 20px;
+    }
+
+    .form-login h2 {
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: var(--primary-color);
+    }
+
+    .form-login .slogan {
+        font-size: 13px;
+        font-weight: 200;
+        margin-bottom: 20px;
+    }
+
+.container-signup {
+    margin-bottom: 30px;
+    height: 7vh;
+    position: relative;
+}
+
+    .container-signup .label {
+        margin-bottom: 5px;
+        font-size: 15px;
+        font-weight: 500;
+        color: var(----color-product-name);
+    }
+
+    .container-signup input {
+        display: inline-block;
+        width: 100%;
+        padding: 0 8px;
+        height: 5vh;
+        border-radius: 10px;
+        border: 1px solid var(--primary-color);
+        font-size: 16px;
+    }
+
+        .container-signup input.invalid {
+            border: 1px solid rgb(188, 78, 78);
+            animation: shake 0.3s ease;
+        }
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    75% {
+        transform: translateX(5px);
+    }
+}
+
+.notification {
+    font-size: 12px;
+    padding-left: 15px;
+    margin: 4px 0;
+    color: red;
+}
+
+.container-signup input:focus {
+    outline: none;
+}
+
+.container-signup i {
+    position: absolute;
+    top: 4.5vh;
+    right: 1vw;
+    cursor: pointer;
+}
+
+
+
+.register-button {
+    width: 100%;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+    margin: 20px 0;
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+.register-button1 {
+    background-color: transparent;
+    font-size: 15px;
+    color: white;
+    border: none;
+}
+
+.footer-form {
+    display: flex;
+    padding-left: 10px;
+}
+
+    .footer-form a {
+        text-decoration: none;
+        margin-left: 20px;
+        color: black;
+        font-weight: 600;
+        cursor: pointer;
+    }
